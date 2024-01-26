@@ -21,7 +21,7 @@ pub struct ServiceInfo {
   pub location_ipv6_ready: bool,                      // Whether IPv6 is supported at the current location
   pub plan: String,                                   // Name of plan
   pub plan_monthly_data: i64,                         // Allowed monthly data transfer (bytes). Needs to be multiplied by monthly_data_multiplier - see below.
-  pub monthly_data_multiplier: i64,                   // Some locations offer more expensive bandwidth; this variable contains the bandwidth accounting coefficient.
+  pub monthly_data_multiplier: f64,                   // Some locations offer more expensive bandwidth; this variable contains the bandwidth accounting coefficient.
   pub plan_disk: i64,                                 // Disk quota (bytes)
   pub plan_ram: i64,                                  // RAM (bytes)
   pub plan_swap: i64,                                 // SWAP (bytes)
