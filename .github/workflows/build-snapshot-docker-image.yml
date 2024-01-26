@@ -1,5 +1,6 @@
 name: Build Snapshot Docker Images
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
